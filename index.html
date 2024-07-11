@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Pakhi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clickable" onclick="showMessage()">
+            <img src="—Pngtree—bouquet of tulips_13322186.png" alt="Bouquet" id="bouquetImage">
+            <h1 id="sorryMessage" style="display: block;">🧡 Sorry Pakhi 🧡</h1>
+        </div>
+        <div class="click-me" id="clickMessage">
+            <p>Here are some flowers for my beautiful girlfriend. Click the flowers!</p>
+        </div>
+        <div class="scroll-down" id="scrollIndicator">
+            <p>
+                Click the emoji on the bottom and type the password. The Password is our favorite number that many times and then scroll down :)
+            </p>
+        </div>
+        <div class="emoji" id="vanish" onclick="showPasswordPrompt()">
+            <p>
+                💌
+            </p>
+        </div>
+    </div>
+    <div class="message">
+        <p>
+            Babe I have disappointed you in many ways. I can’t say sorry enough times to make up for it. Your anger and your disappointment is totally valid. I understand that i have hurt you deeply and i wish I never did the things i did. I have broken your trust many times and I am ashamed of it. I am sorry to not do such basics things for you babe. I know my argument about me starting to do things since last week is not valid. However, I really am wanting to make you feel the love i have for you babe. I want you to know how much i love you and how important you are to me. you are tiered of me giving promises and not doing what i say and ik this is the last time i have to bring you back or you will be gone forever! i am not gonna let you go and show you how much you mean to me Pakhi. i am sorry for being an irresponsible child that you have to guid all the time and you still might have to do that in some way but i will make sure I learn from my mistakes and do not repeat them again. i am sorry i have ruined the social media for you and you don’t even feel like sending things to me, but i promise you that it is not a chore for me! I love sending you snaps and telling you what has been going on in my day, i love sending you the reels and tik toks to show you what i feel for you. Ik you had to tell me to do these things and now you hate it, but Ik once we are out of this you will love to see those things again cause you love me! today when you were mad at me while talking I felt so bad because i saw how hopeless you were with me. however, i could still see the love you have for me! And that love is what is going to save us.   I still remember when i we started talking to each other, i told you that i have made such dumb mistakes and i will probably make them again, this is what i was talking about. I somehow always manage to fuck up when i have good things. when i was young i broke my perfect working toys and i got older and i break all the good situation i have in my life. And i am not trying to blame shit on me and feel bad, it is completely opposite. i am mad with myself and how i mess things up. i want to fix this though! i have messed up a lot in my life and us is not something i can mess up. idk what i have done in my life to get you but i am surely doing dumb things to loose you. I am not gonna mess up on us now! i am gonna fight myself for this. i am going to change things. Ik it is going to take a long time to make you feel better and trust me again. i will be consistent with things and show you more love! i wish i could hold you in my arms and show you how much i actually love you!!!   since the day i first said I love you without thinking i knew that you were someone so special that i could never find in my life! it is crazy and rare how much we love each other! i wish i could show it to you right now! when i sleep at nights and you are not on call, i think about you being close to me and imagine your touch and your breath and your warm skin and it makes me instantly sleep! the things you make me experience and feel inside me, i have never experienced ever before. The quality sleep i have with you i have never had that kind of sleep in my life. we are meant to be Pakhi! and we will be together no matter what. I am gonna fix my acts and get my shit together and win your trust again! i cannot stop saying this pakhi, I love you, I love you and I love you the most!!! 🧡🧡🧡        
+        </p>
+    </div>
+    <script>
+        function showMessage() {
+            var bouquetImage = document.getElementById('bouquetImage');
+            var sorryMessage = document.getElementById('sorryMessage');
+
+            bouquetImage.style.opacity = '0';
+            sorryMessage.style.opacity = '1';
+        }
+
+        window.addEventListener('scroll', function() {
+            var message = document.querySelector('.message p');
+            var scrollPosition = window.scrollY;
+            var windowHeight = window.innerHeight;
+            
+            var scrollIndicator = document.getElementById('scrollIndicator');
+            var clickMessage = document.getElementById('clickMessage');
+            var emoji = document.getElementById('vanish');
+
+            if (scrollPosition > 400) {
+                scrollIndicator.classList.add('hidden');
+                clickMessage.classList.add('hidden');
+                emoji.classList.add('hidden');
+            }
+        });
+
+        // Function to handle password prompt
+        function showPasswordPrompt() {
+            var password = prompt("Enter password:");
+            if (password === "333") {
+                var message = document.querySelector('.message p');
+                message.innerHTML = "Babe I have disappointed you in many ways I can’t say sorry enough times to make up for it. Your anger and your disappointment is totally valid. I understand that i have hurt you deeply and i wish I never did the things i did. I have broken your trust many times and I am ashamed of it. I am sorry to not do such basics things for you babe. i know my argument about me starting to do things since last week is not valid. However, I really am wanting to make you feel the love i have for you babe. I want you to know how much i love you and how important you are to me. you are tiered of me giving promises and not doing what i say and ik this is the last time i have to bring you back or you will be gone forever! i am not gonna let you go and show you how much you mean to me Pakhi. i am sorry for being an irresponsible child that you have to guid all the time and you still might have to do that in some way but i will make sure I learn from my mistakes and do not repeat them again. i am sorry i have ruined the social media for you and you don’t even feel like sending things to me, but i promise you that it is not a chore for me! I love sending you snaps and telling you what has been going on in my day, i love sending you the reels and tik toks to show you what i feel for you. Ik you had to tell me to do these things and now you hate it, but Ik once we are out of this you will love to see those things again cause you love me! today when you were mad at me while talking I felt so bad because i saw how hopeless you were with me. however, i could still see the love you have for me! And that love is what is going to save us.   I still remember when i we started talking to each other, i told you that i have made such dumb mistakes and i will probably make them again, this is what i was talking about. I somehow always manage to fuck up when i have good things. when i was young i broke my perfect working toys and i got older and i break all the good situation i have in my life. And i am not trying to blame shit on me and feel bad, it is completely opposite. i am mad with myself and how i mess things up. i want to fix this though! i have messed up a lot in my life and us is not something i can mess up. idk what i have done in my life to get you but i am surely doing dumb things to loose you. I am not gonna mess up on us now! i am gonna fight myself for this. i am going to change things. Ik it is going to take a long time to make you feel better and trust me again. i will be consistent with things and show you more love! i wish i could hold you in my arms and show you how much i actually love you!!!   since the day i first said I love you without thinking i knew that you were someone so special that i could never find in my life! it is crazy and rare how much we love each other! i wish i could show it to you right now! when i sleep at nights and you are not on call, i think about you being close to me and imagine your touch and your breath and your warm skin and it makes me instantly sleep! the things you make me experience and feel inside me, i have never experienced ever before. The quality sleep i have with you i have never had that kind of sleep in my life. we are meant to be Pakhi! and we will be together no matter what. I am gonna fix my acts and get my shit together and win your trust again! i cannot stop saying this pakhi, I love you, I love you and I love you the most!!! 🧡🧡🧡";
+                message.classList.add('visible');
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
